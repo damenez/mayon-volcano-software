@@ -1,0 +1,348 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+html{
+background-color: white;
+
+}
+
+#container{
+	margin: auto;
+	position: relative;
+}
+
+.wrapper {
+	width: 960px;
+	margin: auto;
+}
+
+
+body{
+	font-size: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: Lucida Console;
+
+
+}
+
+li{
+	list-style: none;
+}
+
+
+
+header{
+	height: 45px;
+	background-color: #ff4747;
+	margin: 0px;
+	padding: 0px;
+
+}
+
+header ul{
+	float: right;
+	margin: 0px;
+}
+
+header li{
+	float: left;
+	overflow: hidden;
+}
+
+header img{
+	height: 45px;
+
+}
+
+header a {
+	text-decoration: none;
+	color: black; 
+}
+
+header a:hover{
+	text-decoration: underline;
+}
+
+header small{
+	float: left;
+	color: white;
+	margin-top: 17px;
+	font-size: 0.75em;
+}
+
+#nav{
+	height: 110px;
+	margin: 0;
+	padding: 0;
+
+}
+
+nav h1{
+    text-indent: -9999px;
+    // background: url(images/MVSLogo.png) no-repeat;
+    background: image-url('#{welcome/MVSLogo}.png') no-repeat;
+    float: left;
+    margin-top: 30px;
+    width: 200px;
+    height: 49px;
+    padding: 0px;
+}
+
+
+nav ul{
+    float: right;
+    padding: 0px;
+    margin-top: 50px;
+    margin-right: -110px; /*HELP?*/
+}
+
+#nav li{
+	float: left;
+	padding: 0 1em;
+
+}
+
+#nav a{
+	text-decoration: none;
+	color: grey;
+
+}
+
+#nav a:hover{
+	text-decoration: underline;
+}
+
+#nav a.selected{
+	font-weight: bold;
+}
+
+
+#primary{
+	// background: url(images/slider.jpeg) no-repeat;
+	// background-image: image-url("welcome/slider.jpeg") no-repeat;
+	background: image-url('#{welcome/slider}.jpg') no-repeat center center fixed;
+
+	height: 450px;
+	background-size: 100% 100%;
+
+}
+
+#primarytext {
+	padding-top: 150px;
+	margin: 0;
+	color: #f7f9f9;
+	text-align: center;
+}
+
+#primarytext h2{
+	font-size: 2em;
+	padding-bottom: 25px;
+
+}
+
+#primarytext h4{
+	padding-bottom: 25px;
+}
+
+#button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+
+#secondary{
+	overflow: hidden;
+	height: 465px;
+	margin: 0;
+	color: #85929E;
+
+}
+
+
+#secondary img{
+    margin-top: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
+    float: left;
+    height: 320px;
+    width: 390px;
+}
+
+#secondarytext{
+    padding-top: 80px;
+    width: 350px;
+    float: right;
+    margin-right: 100px;
+    text-align: justify;
+}
+
+#secondarytext h2{
+	font-size: 2em;
+    padding-bottom: 25px;
+    width: 350px;
+    float: right;
+
+}
+
+#secondarytext small{
+	font-size: 0.75em;
+}
+
+#tertiary{
+	overflow: hidden;
+	background-color: #ff4747;
+	height: 465px;
+	margin: 0px;
+
+}
+
+
+#tertiary img{
+    padding: 0px;
+    /* margin-left: 50px; */
+    margin-top: 70px;
+    margin-right: 25px;
+    float: right;
+    height: 320px;
+    width: 390px;
+    position: relative;
+}
+
+#tertiarytext{
+	color: white;
+	float: left;
+	width: 450px;
+	height: 100%;
+	padding-top: 80px;
+	margin: 0;
+	margin-left: 25px;
+	text-align: justify;
+
+}
+
+#tertiarytext h2{
+	font-size: 2em;
+	margin: 0px;
+	margin-bottom: 25px;
+}
+
+#tertiarytext small{
+    font-size: 0.75em;
+    
+
+}
+
+#tertiarytext img{
+    height: 210px;
+    width: 250px;
+    float: left;
+   	margin-top: 55px;
+    margin-left: 50px;
+
+
+   
+}
+
+footer{
+	overflow: hidden;
+	height: 60px;
+	background-color: #2b282b;
+	margin: 0px;
+	font-size: 15px;
+	line-height: 60px;
+
+}
+
+footer p{
+	color: #f0f3f4;
+	margin: 0;
+	float: left;
+	color: grey;
+
+}
+
+footer ul{
+	float: right;
+	margin: 0;
+	text-transform: uppercase;
+
+}
+
+footer li{
+	float: left;
+	padding-right: 1.5em;
+
+
+}
+
+footer a{
+	color: grey;
+	text-decoration: none;
+
+}
+
+footer a:hover{
+	text-decoration: underline;
+}
+
+footer a.selected{
+	font-weight: bold;
+}
